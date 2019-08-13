@@ -1,4 +1,4 @@
-<form>
+<form #postForm="ngForm" (ngSubmit)="addPost(postForm)">
   <label for="title">Title</label>
   <input type="text" placeholder="Post title" />
   <label for="thought">Thought</label>

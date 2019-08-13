@@ -1,3 +1,15 @@
-<button>New Thought</button>
-<app-post></app-post>
-<app-post-form></app-post-form>
+<main>
+  <h1>My Thoughts</h1>
+  <section>
+    <button>New Thought</button>
+    <div>
+      <app-post
+        *ngFor="let post of posts; index as i"
+        [post]="post"
+        [index]="i"
+      ></app-post>
+    </div>
+  </section>
+</main>
+
+<app-post-form (onAdd)="addNewPostHandler($event)"></app-post-form>
