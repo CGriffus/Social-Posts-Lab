@@ -11,11 +11,10 @@ export class PostFormComponent implements OnInit {
   constructor() {}
 
   addPost(postForm: NgForm): void {
-    console.log(postForm.value.title);
-    // this.onAdd.emit({
-    //   title: postForm.value.title,
-    //   thought: PostFormComponent.value.title
-    // });
+    this.onAdd.emit({
+      title: postForm.value.title,
+      thought: postForm.value.thought
+    });
   }
 
   ngOnInit() {}

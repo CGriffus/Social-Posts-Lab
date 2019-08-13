@@ -11,13 +11,12 @@ export class SocialPostsComponent implements OnInit {
 
   posts: Post[] = [
     { title: "My new post", thought: "blah blah blah" },
-    { title: "Another new post", thought: "bleh bleh blah" }
+    { title: "Another new post", thought: "bleh blah blah" }
   ];
 
   constructor() {}
 
   addNewPostHandler(newPost: object): void {
-    // console.log("added post");
     this.posts.unshift(newPost);
   }
 
