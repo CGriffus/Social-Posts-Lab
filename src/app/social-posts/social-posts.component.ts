@@ -18,11 +18,16 @@ export class SocialPostsComponent implements OnInit {
 
   addNewPostHandler(newPost: object): void {
     this.posts.unshift(newPost);
+    this.toggleForm();
   }
 
-  removePostHandler() {}
+  removePostHandler(index): void {
+    this.posts.splice(index, 1);
+  }
 
-  toggleFormHandler() {}
+  toggleForm() {
+    this.show = !this.show;
+  }
 
   ngOnInit() {}
 }

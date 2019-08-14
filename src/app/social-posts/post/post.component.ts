@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
   selector: "app-post",
@@ -7,8 +7,13 @@ import { Component, OnInit, Input } from "@angular/core";
 })
 export class PostComponent implements OnInit {
   @Input() post: object;
-  @Input() index: number;
+  @Input() postIndex: number;
+  @Output() onDelete = new EventEmitter<any>();
   constructor() {}
+
+  deletePost(index: number): void {
+    this.onDelete.emit(index);
+  }
 
   ngOnInit() {}
 }
