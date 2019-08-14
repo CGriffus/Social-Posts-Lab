@@ -1,0 +1,33 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 5px;
+  background: #b1ddea;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+label {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#thought {
+  height: 300px;
+}
+
+#add {
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}

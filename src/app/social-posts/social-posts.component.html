@@ -1,8 +1,11 @@
 <main>
   <h1>My Thoughts</h1>
   <section>
-    <button>New Thought</button>
-    <app-post-form (onAdd)="addNewPostHandler($event)"></app-post-form>
+    <button (click)="toggleForm()">New Thought</button>
+    <app-post-form
+      *ngIf="show"
+      (onAdd)="addNewPostHandler($event)"
+    ></app-post-form>
     <div>
       <app-post
         *ngFor="let post of posts; index as i"
@@ -13,6 +16,3 @@
     </div>
   </section>
 </main>
-
-<!-- (click)="toggleForm()" -->
-<!-- *ngIf="show" -->

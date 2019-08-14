@@ -9,7 +9,7 @@ button {
   border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
-  width: 50%;
+  width: 55%;
   margin: 5px;
 }
 
@@ -17,7 +17,7 @@ div {
   background: white;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 10px;
+  padding: 30px;
   margin: 5px;
   height: auto;
   width: 50%;

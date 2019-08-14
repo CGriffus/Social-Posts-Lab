@@ -9,10 +9,7 @@ import { Post } from "../interfaces/post";
 export class SocialPostsComponent implements OnInit {
   show: boolean = false;
 
-  posts: Post[] = [
-    { title: "My new post", thought: "blah blah blah" },
-    { title: "Another new post", thought: "bleh blah blah" }
-  ];
+  posts: Post[] = [];
 
   constructor() {}
 
