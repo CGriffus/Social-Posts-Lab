@@ -1,0 +1,19 @@
+.post-container {
+  margin: 10px;
+  position: relative;
+  border-bottom: 1px solid gray;
+}
+
+#title {
+  font-size: 24px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.far {
+  position: absolute;
+  right: 0;
+  top: 25px;
+}
